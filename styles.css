@@ -1,0 +1,152 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #4b0e6e, #6f4a93);
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Banner */
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Tabs */
+.tabs {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #8e24aa;
+}
+
+/* Lineup Section */
+.lineup-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.stage {
+    text-align: center;
+    width: 30%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stage h3 {
+    font-size: 18px;
+    color: #4b0e6e;
+    margin-bottom: 15px;
+}
+
+.artist img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artist p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #4b0e6e, #6f4a93);
+    color: #f4f4f9;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lineup-row {
+        flex-direction: column;
+    }
+
+    .stage {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
