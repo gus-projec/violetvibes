@@ -1,17 +1,18 @@
-/* Reset and Base Styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and Text Styling */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
     color: #333;
 }
 
-/* Header and Navigation */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -36,75 +37,101 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
     padding: 10px 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Banner */
-.banner-image {
-    width: 100%;
-    height: auto;
-}
-
-/* Tabs */
-.tabs {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.tab-button {
-    background-color: #6a1b9a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-.tab-button:hover {
-    background-color: #8e24aa;
-}
-
-/* Lineup Section */
-.lineup-row {
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('images/festival-hero.jpg') no-repeat center center / cover;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.stage {
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    position: relative;
+    color: #fff;
     text-align: center;
-    width: 30%;
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
-.stage h3 {
-    font-size: 18px;
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #fbb034;
     color: #4b0e6e;
-    margin-bottom: 15px;
-}
-
-.artist img {
-    width: 80px;
-    height: auto;
+    text-decoration: none;
     border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    display: inline-block;
 }
 
-.artist p {
-    margin-top: 8px;
-    font-size: 14px;
+.cta-button:hover {
+    background-color: #e09e1c;
+}
+
+/* Highlights Section */
+.highlights {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6a1b9a, #b84fbd, #f7c1e6); /* Violet-to-light pink gradient */
+    color: #fff; /* Sets the text color to white for better contrast */
+}
+
+.highlights h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+.highlight-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.highlight-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+}
+
+.highlight-table img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.highlight-table h3 {
+    font-size: 1.4em;
+    color: #4b0e6e;
+    margin-bottom: 10px;
+}
+
+.highlight-table p {
+    font-size: 1em;
     color: #555;
 }
 
@@ -117,7 +144,7 @@ footer {
 }
 
 .social-media img {
-    width: 30px;
+    width: 20px;
     margin: 0 10px;
     transition: transform 0.3s;
 }
@@ -127,26 +154,382 @@ footer {
 }
 
 footer p {
-    margin-top: 10px;
     font-size: 14px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .lineup-row {
-        flex-direction: column;
-    }
+/* Lineup Page Styling */
+.lineup {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #4b0e6e, #6f4a93);
+    color: #ffffff;
+}
 
-    .stage {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+.lineup h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
 
-    nav ul {
-        flex-direction: column;
-    }
+.lineup-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: #8e24aa;
+}
+
+.day-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.day-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.artist-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.artist-list li {
+    font-size: 1.1em;
+}
+
+/* Footer Styling */
+footer {
+    background: #4b0e6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media img {
+    width: 25px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #d3d3d3;
+}
+/* Lineup Banner */
+.lineup-banner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lineup-banner img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lineup Page Styling */
+.lineup {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #4b0e6e, #6f4a93);
+    color: #ffffff;
+}
+
+.lineup h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.lineup-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color: #8e24aa;
+}
+
+.day-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.day-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.artist-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.artist-list li {
+    font-size: 1.1em;
+}
+/* Styling for the Artist List */
+.artist-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.artist-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+
+.artist-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.artist-list img:hover {
+    transform: scale(1.05);
+}
+
+.artist-list p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+}
+.lineup-banner {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #4b0e6e, #8a2be2, #ff69b4);
+    /* Adjust gradient colors to fit your overall theme */
+}
+
+.lineup-banner img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Remove margin/padding on the body, header, and lineup-banner section */
+body, header, .lineup-banner {
+    margin: 0;
+    padding: 0;
+}
+
+/* If there’s specific padding in the header or nav, remove it */
+header {
+    padding-bottom: 0;
+}
+
+/* Adjust the lineup-banner specifically */
+.lineup-banner {
+    margin-top: 0;
+    padding-top: 0;
+}
+/* Tickets Section */
+.tickets {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #4b0e6e, #8a2be2, #ff69b4);
+    color: #ffffff;
+}
+
+.ticket-description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Ticket Table */
+.ticket-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.ticket-table th {
+    background-color: #8a2be2;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ticket-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ticket-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Purchase Button */
+.purchase-button {
+    margin-top: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff69b4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e63e8c;
+}
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #4b0e6e, #8a2be2);
+    color: #ffffff;
+}
+
+.contact-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #333;
+}
+
+.contact-form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4b0e6e;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form-container button {
+    padding: 10px 20px;
+    background-color: #8a2be2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form-container button:hover {
+    background-color: #6f1d9a;
+}
+
+/* Additional Contact Info */
+.additional-info, .social-media-links {
+    margin-top: 20px;
+}
+
+.additional-info h2, .social-media-links h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+.additional-info p, .social-media-links a {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.social-media-links a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media-links a img:hover {
+    transform: scale(1.1);
 }

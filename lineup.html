@@ -8,10 +8,10 @@
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header and Navigation -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Violet Vibes Festival Logo">
+            <img src="images/logo.png" alt="Violet Vibes Festival Logo">
         </div>
         <nav>
             <ul>
@@ -23,139 +23,93 @@
         </nav>
     </header>
 
-    <!-- Banner -->
-    <section class="banner">
-        <img src="banner.jpg" alt="Festival Banner" class="banner-image">
+    <!-- Lineup Banner -->
+    <section class="lineup-banner">
+        <img src="images/banner.jpg" alt="Lineup Banner for Violet Vibes Festival">
     </section>
 
-    <!-- Day Tabs -->
-    <div class="tabs">
-        <button class="tab-button" onclick="showDay('friday')">Friday</button>
-        <button class="tab-button" onclick="showDay('saturday')">Saturday</button>
-        <button class="tab-button" onclick="showDay('sunday')">Sunday</button>
-    </div>
+    <!-- Lineup Section -->
+    <section class="lineup">
+        <h1>Lineup by Day</h1>
+        <p class="lineup-description">Discover the amazing artists performing each day at Violet Vibes Festival. Click on each day for details!</p>
+        
+        <!-- Tabs for Each Day -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="showDay('friday')">Friday</button>
+            <button class="tab-button" onclick="showDay('saturday')">Saturday</button>
+            <button class="tab-button" onclick="showDay('sunday')">Sunday</button>
+        </div>
 
-    <!-- Lineup Table -->
-    <section id="lineup">
-        <!-- Friday Lineup -->
+        <!-- Lineup Content by Day -->
         <div id="friday" class="day-content">
             <h2>Friday Lineup</h2>
-            <div class="lineup-row">
-                <div class="stage">
-                    <h3>Main Stage</h3>
-                    <div class="artist">
-                        <img src="dua.png" alt="Dua Lipa">
-                        <p>Dua Lipa</p>
-                    </div>
-                    <div class="artist">
-                        <img src="weeknd.png" alt="The Weeknd">
-                        <p>The Weeknd</p>
-                    </div>
-                </div>
-                <div class="stage">
-                    <h3>Alternative Stage</h3>
-                    <div class="artist">
-                        <img src="bille.png" alt="Billie Eilish">
-                        <p>Billie Eilish</p>
-                    </div>
-                    <div class="artist">
-                        <img src="fred.png" alt="Fred Again">
-                        <p>Fred Again</p>
-                    </div>
-                </div>
-            </div>
+            <ul class="artist-list">
+                <li>
+                    <img src="images/artists/the-weeknd.jpg" alt="The Weeknd">
+                    <p>The Weeknd</p>
+                </li>
+                <li>
+                    <img src="images/artists/dua-lipa.jpg" alt="Dua Lipa">
+                    <p>Dua Lipa</p>
+                </li>
+                <li>
+                    <img src="images/artists/billie-eilish.jpg" alt="Billie Eilish">
+                    <p>Billie Eilish</p>
+                </li>
+            </ul>
         </div>
 
-        <!-- Saturday Lineup -->
-        <div id="saturday" class="day-content" style="display: none;">
+        <div id="saturday" class="day-content" style="display:none;">
             <h2>Saturday Lineup</h2>
-            <div class="lineup-row">
-                <div class="stage">
-                    <h3>Main Stage</h3>
-                    <div class="artist">
-                        <img src="weeknd.png" alt="The Weeknd">
-                        <p>The Weeknd</p>
-                    </div>
-                    <div class="artist">
-                        <img src="bille.png" alt="Billie Eilish">
-                        <p>Billie Eilish</p>
-                    </div>
-                </div>
-                <div class="stage">
-                    <h3>Alternative Stage</h3>
-                    <div class="artist">
-                        <img src="dua.png" alt="Dua Lipa">
-                        <p>Dua Lipa</p>
-                    </div>
-                    <div class="artist">
-                        <img src="fred.png" alt="Fred Again">
-                        <p>Fred Again</p>
-                    </div>
-                </div>
-                <div class="stage">
-                    <h3>Electronic Stage</h3>
-                    <div class="artist">
-                        <img src="fred.png" alt="Fred Again">
-                        <p>Fred Again</p>
-                    </div>
-                </div>
-            </div>
+            <ul class="artist-list">
+                <li>
+                    <img src="images/artists/lana-del-rey.jpg" alt="Lana Del Rey">
+                    <p>Lana Del Rey</p>
+                </li>
+                <li>
+                    <img src="images/artists/hozier.jpg" alt="Hozier">
+                    <p>Hozier</p>
+                </li>
+                <li>
+                    <img src="images/artists/fred-again.jpg" alt="Fred Again">
+                    <p>Fred Again</p>
+                </li>
+            </ul>
         </div>
 
-        <!-- Sunday Lineup -->
-        <div id="sunday" class="day-content" style="display: none;">
+        <div id="sunday" class="day-content" style="display:none;">
             <h2>Sunday Lineup</h2>
-            <div class="lineup-row">
-                <div class="stage">
-                    <h3>Main Stage</h3>
-                    <div class="artist">
-                        <img src="dua.png" alt="Dua Lipa">
-                        <p>Dua Lipa</p>
-                    </div>
-                    <div class="artist">
-                        <img src="weeknd.png" alt="The Weeknd">
-                        <p>The Weeknd</p>
-                    </div>
-                </div>
-                <div class="stage">
-                    <h3>Alternative Stage</h3>
-                    <div class="artist">
-                        <img src="bille.png" alt="Billie Eilish">
-                        <p>Billie Eilish</p>
-                    </div>
-                    <div class="artist">
-                        <img src="fred.png" alt="Fred Again">
-                        <p>Fred Again</p>
-                    </div>
-                </div>
-                <div class="stage">
-                    <h3>Electronic Stage</h3>
-                    <div class="artist">
-                        <img src="fred.png" alt="Fred Again">
-                        <p>Fred Again</p>
-                    </div>
-                </div>
-            </div>
+            <ul class="artist-list">
+                <li>
+                    <img src="images/artists/coldplay.jpg" alt="Coldplay">
+                    <p>Coldplay</p>
+                </li>
+                <li>
+                    <img src="images/artists/syml.jpg" alt="SYML">
+                    <p>SYML</p>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="social-media">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
         </div>
         <p>&copy; 2025 Violet Vibes Festival. All rights reserved.</p>
     </footer>
 
     <script>
         function showDay(day) {
-            document.querySelectorAll('.day-content').forEach(content => {
-                content.style.display = 'none';
-            });
+            document.querySelectorAll('.day-content').forEach(content => content.style.display = 'none');
+            document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
             document.getElementById(day).style.display = 'block';
+            event.target.classList.add('active');
         }
     </script>
+
 </body>
 </html>
