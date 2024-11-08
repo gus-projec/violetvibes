@@ -547,4 +547,38 @@ header {
     height: 315px; /* Set a fixed height to maintain aspect ratio */
     border-radius: 8px;
 }
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #FFD700; /* Bright gold color for better contrast */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #FFFFFF; /* White for readability */
+    margin-bottom: 20px;
+}
+
+.maps-link {
+    font-size: 1.1rem;
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #FFD700; /* Gold border to match the theme */
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.maps-link:hover {
+    background-color: #FFD700; /* Gold background on hover */
+    color: #4B0082; /* Dark purple text on hover for contrast */
+}
+
 
