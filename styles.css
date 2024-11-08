@@ -533,3 +533,18 @@ header {
 .social-media-links a img:hover {
     transform: scale(1.1);
 }
+/* Center the video and remove black bars */
+.promo-video {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.promo-video iframe {
+    width: 100%;
+    max-width: 560px; /* Adjust the max-width if you want a specific size */
+    height: 315px; /* Set a fixed height to maintain aspect ratio */
+    border-radius: 8px;
+}
+
