@@ -1,0 +1,683 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Text Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0e6ff;
+    color: #333;
+  }
+
+  /* Ensure body and html take up full height */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  
+  /* Header */
+  header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #3a0b53;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('images/festival-hero.jpg') no-repeat center center / cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(58, 11, 83, 0.7); /* Semi-transparent deep purple */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #9c27b0; /* Bright purple */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-image: none; 
+  }
+  
+  .cta-button:hover {
+    background-color: #7b1fa2; /* Darker purple on hover */
+  }
+
+  /* Centering the Purchase Tickets Button */
+.purchase-tickets-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds some space above the button */
+  }
+  
+  /* Highlights Section */
+  .highlights {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a0b53, #9c27b0); /* Purple gradient */
+    color: #fff;
+  }
+  
+  .highlights h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Highlight Table */
+  .highlight-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .highlight-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+  }
+  
+  .highlight-table img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .highlight-table h3 {
+    font-size: 1.4em;
+    color: #4b0e6e;
+    margin-bottom: 10px;
+  }
+  
+  .highlight-table p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(135deg, #3a0b53, #6a1b9a);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+  }
+  
+  .social-media img {
+    width: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.2);
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Lineup Page Styling */
+  .lineup {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a0b53, #6a1b9a);
+    color: #ffffff;
+  }
+  
+  .lineup h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .lineup-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background-color: #9c27b0;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #7b1fa2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-button.active,
+  .tab-button:hover {
+    background-color: #7b1fa2;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Day Content */
+  .day-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .day-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #e1bee7; /* Light purple */
+  }
+  
+  /* Artist List */
+  .artist-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .artist-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+  }
+  
+  .artist-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .artist-list img:hover {
+    transform: scale(1.05);
+  }
+  
+  .artist-list p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Lineup Banner */
+  .lineup-banner {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #4b0e6e, #8a2be2, #ff69b4);
+  }
+  
+  .lineup-banner img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tickets Section */
+  .tickets {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a0b53, #9c27b0);
+    color: #ffffff;
+  }
+
+  .tickets-content {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a0b53, #9c27b0); /* Purple gradient background */
+    color: #e6caca;
+    min-height: calc(100vh - 80px); /* Adjust based on your header and footer height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ticket-description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  /* Ticket Table */
+  .ticket-table {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: transparent; /* Remove white background */
+    color: #ffffff; /* White text color */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .ticket-table th,
+  .ticket-table td {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .ticket-table td {
+    background-color: rgba(58,11,83,0.1); /* Light purple for rows */
+  }
+  
+  .ticket-table th {
+    background-color: #7b1fa2;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .ticket-table tr:nth-child(even) {
+    background-color: rgba(58,11,83,0.2);
+  }
+  
+  .ticket-table tr:hover {
+    background-color: rgba(58,11,83,0.4); /* Darker purple on hover */
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a0b53, #9c27b0);
+    color: #ffffff;
+  }
+  
+  .contact-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Form */
+  .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #333;
+  }
+  
+  .contact-form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3a0b53;
+  }
+  
+  .contact-form-container input,
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form-container button {
+    padding: 10px 20px;
+    background-color: #9c27b0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form-container button:hover {
+    background-color: #7b1fa2;
+  }
+  
+  /* Additional Contact Info */
+  .additional-info, .social-media-links {
+    margin-top: 20px;
+  }
+  
+  .additional-info h2, .social-media-links h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #e1bee7; /* Light purple */
+  }
+  
+  .additional-info p, .social-media-links a {
+    color: #ffffff;
+    font-size: 1.1em;
+  }
+  
+  .social-media-links a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+  
+  .social-media-links a img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Promo Video */
+  .promo-video {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .promo-video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a0b53, #9c27b0);
+    color: #ffffff;
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    color: #e1bee7; /* Light purple */
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .maps-link {
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #e1bee7; /* Light purple border */
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .maps-link:hover {
+    background-color: #e1bee7;
+    color: #3a0b53;
+  }
+  
+  /* Highlight Section */
+  .highlight-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a0b53, #9c27b0);
+  }
+  
+  .highlight-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .highlight-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .highlight-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .highlight-item h3 {
+    font-size: 1.2rem;
+    color: #3a0b53;
+    margin-bottom: 8px;
+  }
+  
+  .highlight-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .highlight-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #3a0b53;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  
+    .menu-toggle:checked + .menu-icon + .menu {
+      display: flex;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu ul li {
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .ticket-table th, .ticket-table td {
+      padding: 8px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .logo img {
+      width: 120px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .logo img {
+      width: 150px;
+    }
+  }
+  
+  /* Table Container for Horizontal Scroll */
+  .table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Specific changes for contact.html */
+.contact-info a {
+    color: #e1bee7; /* Light purple for better contrast */
+    text-decoration: underline;
+  }
+  
+  .contact-info a:hover {
+    color: #ffffff;
+  }
+
+  /* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9; /* Light background to contrast with other sections */
+ }
+ 
+ .testimonials-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #3a0b53; /* Deep purple */
+ }
+ 
+ .testimonial {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555; /* Gray text for testimonials */
+ }
+ 
+ .testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+ }
+
+ .stage {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.artist-timetable {
+  list-style: none;
+  padding: 0;
+  color: #E0E0E0; 
+  font-size: 1.1em;
+}
+
+.artist-timetable .time {
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.artist-timetable li:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+.stage h3 {
+  color: #FFFFFF;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}

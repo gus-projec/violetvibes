@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Vibes Festival - Lineup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/logo-large.png">
+                <source media="(min-width: 600px)" srcset="images/logo-medium.png">
+                <img src="images/logo-small.png" alt="Violet Vibes Festival Logo">
+            </picture>
+        </div>
+        
+        <!-- Hamburger Menu Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        
+        <!-- Menu Icon -->
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lineup.html">Lineup</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Lineup Banner -->
+    <section class="lineup-banner">
+        <img src="images/banner.jpg" alt="Lineup Banner for Violet Vibes Festival">
+    </section>
+
+    <!-- Main Content Section for Lineup -->
+    <main>
+        <!-- Insert Lineup Details Here -->
+        <section class="lineup">
+            <h1>Festival Lineup</h1>
+            <p class="lineup-description">Explore the full line-up of artists, stages, and performance times for each day of Violet Vibes Festival.</p>
+
+            <!-- Day Tabs -->
+            <div class="tabs">
+                <button class="tab-button active" onclick="showDay('friday')">Friday</button>
+                <button class="tab-button" onclick="showDay('saturday')">Saturday</button>
+                <button class="tab-button" onclick="showDay('sunday')">Sunday</button>
+            </div>
+
+            <!-- Friday Lineup -->
+            <div id="friday" class="day-content">
+                <h2>Friday Lineup</h2>
+                <div class="stage">
+                    <h3>Main Stage</h3>
+                    <ul class="artist-timetable">
+                        <li><span class="time">3:00 PM</span> - Artemas</li>
+                        <li><span class="time">5:00 PM</span> - The Weeknd</li>
+                        <li><span class="time">7:00 PM</span> - Dua Lipa</li>
+                        <li><span class="time">9:00 PM</span> - Billie Eilish</li>
+                    </ul>
+                </div>
+                <div class="stage">
+                    <h3>Electronic Stage</h3>
+                    <ul class="artist-timetable">
+                        <li><span class="time">4:00 PM</span> - Fred Again</li>
+                        <li><span class="time">6:00 PM</span> - Sofi Tukker</li>
+                        <li><span class="time">8:00 PM</span> - Jorja Smith</li>
+                        <li><span class="time">10:00 PM</span> - Charlie XCX</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Saturday Lineup -->
+            <div id="saturday" class="day-content" style="display:none;">
+                <h2>Saturday Lineup</h2>
+                <div class="stage">
+                    <h3>Main Stage</h3>
+                    <ul class="artist-timetable">
+                        <li><span class="time">3:00 PM</span> - London Grammar</li>
+                        <li><span class="time">5:00 PM</span> - Lana Del Rey</li>
+                        <li><span class="time">7:00 PM</span> - Hozier</li>
+                        <li><span class="time">9:00 PM</span> - Anitta</li>
+                    </ul>
+                </div>
+                <div class="stage">
+                    <h3>Indie Stage</h3>
+                    <ul class="artist-timetable">
+                        <li><span class="time">4:00 PM</span> - SYML</li>
+                        <li><span class="time">6:00 PM</span> - Tom Odell</li>
+                        <li><span class="time">8:00 PM</span> - Sia</li>
+                        <li><span class="time">10:00 PM</span> - Coldplay</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sunday Lineup -->
+            <div id="sunday" class="day-content" style="display:none;">
+                <h2>Sunday Lineup</h2>
+                <div class="stage">
+                    <h3>Main Stage</h3>
+                    <ul class="artist-timetable">
+                        <li><span class="time">3:00 PM</span> - Evanescence</li>
+                        <li><span class="time">5:00 PM</span> - The Weeknd</li>
+                        <li><span class="time">7:00 PM</span> - Dua Lipa</li>
+                        <li><span class="time">9:00 PM</span> - Coldplay</li>
+                    </ul>
+                </div>
+                <div class="stage">
+                    <h3>Alternative Stage</h3>
+                    <ul class="artist-timetable">
+                        <li><span class="time">2:00 PM</span> - Charlie XCX</li>
+                        <li><span class="time">4:00 PM</span> - Fred Again</li>
+                        <li><span class="time">6:00 PM</span> - SYML</li>
+                        <li><span class="time">8:00 PM</span> - London Grammar</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Tab Switching -->
+    <script>
+        function showDay(day) {
+            var contents = document.getElementsByClassName("day-content");
+            var buttons = document.getElementsByClassName("tab-button");
+
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+            }
+            
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+
+            document.getElementById(day).style.display = "block";
+            document.querySelector("[onclick='showDay(\"" + day + "\")']").classList.add("active");
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Violet Vibes Festival. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
