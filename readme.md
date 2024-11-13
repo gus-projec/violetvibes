@@ -66,3 +66,15 @@
 - **Google Maps Link for Location**: https://www.google.com/maps/dir/53.2795802,-6.3127411/phoenix+park+ireland/@53.3304578,-6.4245116,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48670da9f174517b:0xa126d82d9add596b!2m2!1d-6.3298133!2d53.3558823?entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D
 - **Ticket Purchase Link**: https://www.ticketmaster.ie/
 - **Social Media**: Facebook, Instagram and X icons taken from Google images and background removed using Windows Paint.
+
+## Site Map
+  visual diagram
+  text-based (and include sitemap.xml)
+  loom video: overview of the product created 
+    https://www.loom.com/share/a3d2b26d77754d318c0891772eec0370?sid=f5a80bd7-4901-423f-8bd8-fdd638a56f36
+
+
+
+## Wireframe
+"a sample page on your website"
+3 form-factor
