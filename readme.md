@@ -7,6 +7,7 @@
 
 ### Github-repo: URL
  - https://github.com/gus-projec/violetvibes
+ - https://github.com/gus-projec/violetvibesBroken
 
 ## Planning Analysis Sheet
 
@@ -68,7 +69,7 @@
 - **Social Media**: Facebook, Instagram and X icons taken from Google images and background removed using Windows Paint.
 
 ## Site Map
-  visual diagram
+  visual diagram (excalidrawhttps://excalidraw.com/ can be used)
   text-based (and include sitemap.xml)
   loom video: overview of the product created 
     https://www.loom.com/share/a3d2b26d77754d318c0891772eec0370?sid=f5a80bd7-4901-423f-8bd8-fdd638a56f36
