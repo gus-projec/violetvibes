@@ -470,6 +470,10 @@
     height: 315px;
     border-radius: 8px;
   }
+
+  iframe {
+    border: none;
+  }
   
   /* Contact Info */
   .contact-info {
