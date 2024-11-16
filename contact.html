@@ -48,7 +48,7 @@
 
         <!-- Contact Form -->
         <div class="contact-form-container">
-            <form action="submit_form.php" method="POST">
+            <form action="#" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -61,7 +61,17 @@
                 <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>
+        
+        <p id="feedback-message" class="feedback-message" style="display: none;">Thank you for your message!</p>
 
+        <script>
+            document.querySelector('.contact-form-container form').addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent the default form submission
+                const feedbackMessage = document.getElementById('feedback-message');
+                feedbackMessage.style.display = 'block'; // Show the feedback message
+            });
+        </script>
+        
         <!-- Additional Contact Info -->
         <div class="contact-info">
             <h2>Contact Information</h2>

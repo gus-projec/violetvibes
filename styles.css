@@ -684,3 +684,10 @@
   color: #FFFFFF;
   font-size: 1.8em;
   margin-bottom: 15px;
+
+.feedback-message {
+  color: #FFFFFF;
+  font-size: 1.4em; 
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Add space above */
+}
