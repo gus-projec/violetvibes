@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violet Vibes Festival - Contact Us</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="images/logo-large.png">
-                <source media="(min-width: 600px)" srcset="images/logo-medium.png">
-                <img src="images/logo-small.png" alt="Violet Vibes Festival Logo">
-            </picture>
-        </div>
-        
-        <!-- Hamburger Menu Checkbox -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        
-        <!-- Menu Icon -->
-        <label for="menu-toggle" class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        
-        <!-- Navigation Menu -->
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lineup.html">Lineup</a></li>
-                <li><a href="tickets.html">Tickets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/logo-large.png">
+          <source media="(min-width: 600px)" srcset="images/logo-medium.png">
+          <img src="images/logo-small.png" loading="lazy" alt="Violet Vibes Festival Logo">
+        </picture>
+      </div>
+      <!-- Hamburger Menu Checkbox -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <!-- Menu Icon -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- Navigation Menu -->
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="lineup.html">Lineup</a>
+          </li>
+          <li>
+            <a href="tickets.html">Tickets</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
-<main class="contact-content">
-    <!-- Contact Section -->
-    <section class="contact">
-        <h1>Contact Us</h1> <br>
+    <main class="contact-content">
+      <!-- Contact Section -->
+      <section class="contact">
+        <h1>Contact Us</h1>
+        <br>
         <p class="contact-description">Have questions or need more information? Get in touch with the Violet Vibes Festival team!</p>
-
         <!-- Contact Form -->
         <div class="contact-form-container">
-            <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+          <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+          </form>
         </div>
-        
         <p id="feedback-message" class="feedback-message" style="display: none;">Thank you for your message!</p>
-
         <script>
-            document.querySelector('.contact-form-container form').addEventListener('submit', function (e) {
-                e.preventDefault(); // Prevent the default form submission
-                const feedbackMessage = document.getElementById('feedback-message');
-                feedbackMessage.style.display = 'block'; // Show the feedback message
-            });
+          document.querySelector('.contact-form-container form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+            const feedbackMessage = document.getElementById('feedback-message');
+            feedbackMessage.style.display = 'block'; // Show the feedback message
+          });
         </script>
-        
         <!-- Additional Contact Info -->
         <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:info@violetvibesfestival.com">info@violetvibesfestival.com</a></p>
-            <p>Phone: +353 1 234 5678</p>
-            <!-- <p>Address: Phoenix Park, Dublin, Ireland</p> -->
+          <h2>Contact Information</h2>
+          <p>Email: <a href="mailto:info@violetvibesfestival.com">info@violetvibesfestival.com</a>
+          </p>
+          <p>Phone: +353 1 234 5678</p>
+          <!-- <p>Address: Phoenix Park, Dublin, Ireland</p> -->
         </div>
-
         <section class="location-info">
-            <h2>Festival Location</h2>
-            <p>Join us at the Violet Vibes Festival at Phoenix Park, Dublin, Ireland!</p><br><br>
-            <p><a href="https://www.google.com/maps/dir/53.2795802,-6.3127411/phoenix+park+ireland/@53.3304578,-6.4245116,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48670da9f174517b:0xa126d82d9add596b!2m2!1d-6.3298133!2d53.3558823?entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="maps-link">View on Google Maps</a></p>
+          <h2>Festival Location</h2>
+          <p>Join us at the Violet Vibes Festival at Phoenix Park, Dublin, Ireland!</p>
+          <br>
+          <br>
+          <p>
+            <a href="https://www.google.com/maps/dir/53.2795802,-6.3127411/phoenix+park+ireland/@53.3304578,-6.4245116,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48670da9f174517b:0xa126d82d9add596b!2m2!1d-6.3298133!2d53.3558823?entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="maps-link">View on Google Maps</a>
+          </p>
         </section>
-
         <!-- Social Media Links -->
         <div class="social-media-links">
-            <h2>Follow Us</h2>
-            <a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram-icon.png" alt="Instagram"></a>
-            <a href="https://x.com/"><img src="images/twitter-icon.png" alt="Twitter"></a>
+          <h2>Follow Us</h2>
+          <a href="https://www.facebook.com/">
+            <img src="images/facebook-icon.png" loading="lazy" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="images/instagram-icon.png" loading="lazy" alt="Instagram">
+          </a>
+          <a href="https://x.com/">
+            <img src="images/twitter-icon.png" loading="lazy" alt="Twitter">
+          </a>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Violet Vibes Festival. All rights reserved.</p>
+      <p>&copy; 2024 Violet Vibes Festival. All rights reserved.</p>
     </footer>
-
-</body>
+  </body>
 </html>
