@@ -217,6 +217,16 @@
     margin-bottom: 20px;
   }
   
+  /* Add helper text */
+.lineup-instruction {
+  color: #e1bee7;
+  font-size: 1.2em;
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
   .lineup-description {
     font-size: 1.1em;
     margin-bottom: 30px;
