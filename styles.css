@@ -454,7 +454,7 @@ iframe{
   background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('images/vip-experience.jpg') center/cover no-repeat
 }
 .highlight-item:nth-child(3){
-  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('images/sustainability.jpg') center/cover no-repeat
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('images/sustainability.png') center/cover no-repeat
 }
 .highlight-item h3{
   color:#fff;
