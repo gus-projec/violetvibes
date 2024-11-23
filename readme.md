@@ -22,11 +22,9 @@
 
 ### List of Sources
 
-#### Festival Information:
-- **Festival Details**: https://gus-projec.github.io/violetvibes
-- **Headliner Artists**: 
-- **Event Schedule**: Timetable and schedule details sourced from https://gus-projec.github.io/violetvibes/lineup.html
-- **Location Information**: Phoenix Park, Dublin, Ireland
+#### Code
+- **Visual Studio**: Used to create an to write the code
+- ** Chat GPT**: Used to put my idea into code, code review, git bash instructions. Below is a summary on the chat. I was not able 
 
 #### Images and Graphics:
 - **Logo**: Original creation, designed in Looka: An AI-based logo generator that helps create professional logos.
@@ -45,6 +43,8 @@
 - **Google Maps Link for Location**: https://www.google.com/maps/dir/53.2795802,-6.3127411/phoenix+park+ireland/@53.3304578,-6.4245116,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48670da9f174517b:0xa126d82d9add596b!2m2!1d-6.3298133!2d53.3558823?entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D
 - **Ticket Purchase Link**: https://www.ticketmaster.ie/
 - **Social Media**: Facebook, Instagram and X icons taken from Google images and background removed using Windows Paint.
+- **Chat GPT**: I would share the link for the chat GPT  here. That was not possible, as chatGPT does not provide the sharable link due to the conversation having images.
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Chat%20GPT%20sharable%20link.png))
 
 ## Site Map
   visual diagram (excalidraw https://excalidraw.com/ can be used)
