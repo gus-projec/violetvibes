@@ -2,8 +2,12 @@
 
 ## URLs
 
+### Registered Domain
+- [violetvibesfestival.com](https://violetvibesfestival.com/)
+
 ### GitHub Page URL:
  - https://gus-projec.github.io/violetvibes/
+ - Deactivated after registering a domain with namecheap
 
 ### Github-repo: URL
  - https://github.com/gus-projec/violetvibes
@@ -43,6 +47,7 @@
 - **Google Maps Link for Location**: https://www.google.com/maps/dir/53.2795802,-6.3127411/phoenix+park+ireland/@53.3304578,-6.4245116,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48670da9f174517b:0xa126d82d9add596b!2m2!1d-6.3298133!2d53.3558823?entry=ttu&g_ep=EgoyMDI0MTEwNS4wIKXMDSoASAFQAw%3D%3D
 - **Ticket Purchase Link**: https://www.ticketmaster.ie/
 - **Social Media**: Facebook, Instagram and X icons taken from Google images and background removed using Windows Paint.
+
 - **Chat GPT**: 
 I would share the link for the chat GPT  here. That was not possible, as chatGPT does not provide the sharable link due to the conversation having images.
 ![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Chat%20GPT%20sharable%20link.png))
@@ -86,12 +91,88 @@ https://www.perplexity.ai/search/attached-is-a-website-project-3bhBTo1_Qx21oZkwT
 https://www.perplexity.ai/search/i-want-to-keep-the-css-working-CX1BewvcR7GXfBsFKONAcg
 https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6qqmcow
 
-## Site Map
- - visual diagram (excalidraw https://excalidraw.com/ can be used)
-  text-based (and include sitemap.xml)
-  loom video: overview of the product created 
-    https://www.loom.com/share/a3d2b26d77754d318c0891772eec0370?sid=f5a80bd7-4901-423f-8bd8-fdd638a56f36
+- **loom video**: used to record a demo of the product. See: https://www.loom.com/share/a3d2b26d77754d318c0891772eec0370?sid=f5a80bd7-4901-423f-8bd8-fdd638a56f36
 
-## Wireframe
-"a sample page on your website"
-3 form-factor
+## Site Map
+### sitemap.xml file created and uploaded to Google and Bing. The sitemap will help search engines index your website efficiently and improve its visibility in search results.
+
+- verification from Google
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/sitemap_verified_Google.png)
+
+- Verification from Bing
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Bing_verified.png)
+
+## Website auditing
+- SEOptime audit: https://www.seoptimer.com/gus-projec.github.io#backlinks50852594
+- As per above report, these issues were found:
+  - Reasonably weak level of backlink activity 
+  - Backlinks are links from other websites pointing to your site. To improve this, these would need to be implemented:
+    - Pay for one of market sites like: Ahrefs, Moz Link Explorer and SEMRush
+    - Leverage Social Media
+    - Collaborate with Influencers and Bloggers
+    - Add the website to relevant directories, such as https://www.allmusic.com/
+    - Engage in Guest Blogging
+    - Partner with Local Businesses
+    - Press Releases
+    - Sponsor Events
+    - Forums and Communities
+  - Use of Mobile Viewports
+    - The meta viewport tag tells browsers how to display content on different devices. Without it, mobile devices may not properly adjust the layout, leading to poor usability.
+    - This is a false positive. I've reviewed each html page and the "metaviewport" tag is already placed within the head tag. This is the head tag on each html page:
+    
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Violet Vibes Festival - Lineup</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+
+  - No DMARC Record
+      - In order to be able to add the DMARC Record, I registered the domain with [namecheap](https://www.namecheap.com/)
+      - I was able to add the DMARC Record, according to this: [dmarcian](https://dmarcian.com/how-to-publish-a-dmarc-record/)
+      - Below is the host configuration on namecheap:
+      ![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/DNS_configuration.png)
+      - We can verify that the DMARC was identified on [MXToolBox](https://mxtoolbox.com/SuperTool.aspx?action=dmarc%3avioletvibesfestival.com&run=toolpage#)
+
+
+  - No SPF Record
+  
+  ## Wireframe
+- I used Excalidraw to create visual diagrams representing the layout of each page for different display types (laptop, iPad, and mobile)
+- Here is the sharable link: https://excalidraw.com/#json=jBR7CtWu5YGc0AEG7WUz2,VWR6zEG4ZgB_0k_XhFI1oA
+
+### Home Page (index.html)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Home-laptop.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Home-tablet.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Home-Mobile.png)
+
+### Lineup Page (linup.html)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Lineup-Laptop.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Lineup-tablet.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Lineup-mobile.png)
+
+### Tickets Page (tickets.html)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Ticket-Laptop.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Ticket-tablet.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Ticket-mobile.png)
+
+### Contact Page (contact.html)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Contact-laptop.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/contact-tablet.png)
+
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/contact-mobile.png)
