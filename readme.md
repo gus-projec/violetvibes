@@ -7,7 +7,7 @@
 
 ### GitHub Page URL:
  - https://gus-projec.github.io/violetvibes/
- - Deactivated after registering a domain with namecheap
+ - Deactivated after registering the domain with namecheap
 
 ### Github-repo: URL
  - https://github.com/gus-projec/violetvibes
@@ -91,7 +91,7 @@ https://www.perplexity.ai/search/attached-is-a-website-project-3bhBTo1_Qx21oZkwT
 https://www.perplexity.ai/search/i-want-to-keep-the-css-working-CX1BewvcR7GXfBsFKONAcg
 https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6qqmcow
 
-- **loom video**: used to record a demo of the product. See: https://www.loom.com/share/a3d2b26d77754d318c0891772eec0370?sid=f5a80bd7-4901-423f-8bd8-fdd638a56f36
+- **loom video**: used to record a demo of the product. See: https://www.loom.com/share/7f38ec104a164590b42f0022eaef7249?sid=be20aea2-8ea8-4578-899a-658f9f04c15c
 
 ## Site Map
 ### sitemap.xml file created and uploaded to Google and Bing. The sitemap will help search engines index your website efficiently and improve its visibility in search results.
@@ -102,7 +102,24 @@ https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6
 - Verification from Bing
 ![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Bing_verified.png)
 
+## HTML Validator
+- Home page: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgus-projec.github.io%2Fvioletvibes%2Findex.html
+- Lineup Page: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgus-projec.github.io%2Fvioletvibes%2Flineup.html
+- Tickets Page: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgus-projec.github.io%2Fvioletvibes%2Ftickets.html
+- Contact Page: https://validator.w3.org/nu/?doc=https%3A%2F%2Fgus-projec.github.io%2Fvioletvibes%2Fcontact.html
+
+## CSS Validator
+- I used this CSS validator: https://jigsaw.w3.org/css-validator/validator
+- No error was found
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/css-validator.png)
+
+## Screamingfrog
+- I ran the application to look for broken links, the application crawled the page and it did not find any broken links
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/screamingfrog.png)
+
+
 ## Website auditing
+
 - SEOptime audit: https://www.seoptimer.com/gus-projec.github.io#backlinks50852594
 - As per above report, these issues were found:
   - Reasonably weak level of backlink activity 
@@ -121,7 +138,7 @@ https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6
     - This is a false positive. I've reviewed each html page and the "metaviewport" tag is already placed within the head tag. This is the head tag on each html page:
     
 
-```html
+``` html
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -129,6 +146,7 @@ https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
+
 
 
   - No DMARC Record
@@ -139,8 +157,7 @@ https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6
       - We can verify that the DMARC was identified on [MXToolBox](https://mxtoolbox.com/SuperTool.aspx?action=dmarc%3avioletvibesfestival.com&run=toolpage#)
 
 
-  - No SPF Record
-  
+   
   ## Wireframe
 - I used Excalidraw to create visual diagrams representing the layout of each page for different display types (laptop, iPad, and mobile)
 - Here is the sharable link: https://excalidraw.com/#json=jBR7CtWu5YGc0AEG7WUz2,VWR6zEG4ZgB_0k_XhFI1oA
