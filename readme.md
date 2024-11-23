@@ -137,16 +137,7 @@ https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6
     - The meta viewport tag tells browsers how to display content on different devices. Without it, mobile devices may not properly adjust the layout, leading to poor usability.
     - This is a false positive. I've reviewed each html page and the "metaviewport" tag is already placed within the head tag. This is the head tag on each html page:
     
-
-``` html
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Violet Vibes Festival - Lineup</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/favicon.png" type="image/png">
-</head>
-
+    ![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/head-tag.png)
 
 
   - No DMARC Record
