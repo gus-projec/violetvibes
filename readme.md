@@ -111,11 +111,11 @@ https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6
 ## CSS Validator
 - I used this CSS validator: https://jigsaw.w3.org/css-validator/validator
 - No error was found
-![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/css-validator.png)
+- ![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/css-validator.png)
 
 ## Screamingfrog
 - I ran the application to look for broken links, the application crawled the page and it did not find any broken links
-![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/screamingfrog.png)
+- ![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/screamingfrog.png)
 
 
 ## Website auditing
@@ -171,7 +171,7 @@ https://www.perplexity.ai/search/whats-the-difference-between-y-FlobvUK_QXGEVKU6
 
 ### Tickets Page (tickets.html)
 
-![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Ticket-Laptop.png)
+![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Ticket-laptop.png)
 
 ![Alt Text](https://github.com/gus-projec/violetvibes/blob/main/documents/Ticket-tablet.png)
 
